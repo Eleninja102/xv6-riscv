@@ -1,4 +1,4 @@
-#!/usr/bin/perl -w
+ #!/usr/bin/perl -w
 
 # Generate usys.S, the stubs for syscalls.
 
@@ -36,3 +36,10 @@ entry("getpid");
 entry("sbrk");
 entry("sleep");
 entry("uptime");
+
+entry("incMagic");
+entry("getMagic");
+entry("getProcName");
+entry("modProcName");
+
+

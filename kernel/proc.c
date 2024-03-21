@@ -75,6 +75,7 @@ mycpu(void)
 {
   int id = cpuid();
   struct cpu *c = &cpus[id];
+  
   return c;
 }
 
@@ -680,4 +681,13 @@ procdump(void)
     printf("%d %s %s", p->pid, state, p->name);
     printf("\n");
   }
+}
+
+
+//intialize cpu magic number to zero
+void 
+magicInit(void){
+  mycpu() -> magic = 0;
+  
+  return;
 }
